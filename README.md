@@ -27,11 +27,12 @@ python run_exp.py --model_tag codet5_base --task translate --sub_task java-cs
 
 ## Train retrieval-augmented model
 
-## Ensemble
-
-use vote.py in dir **output**
 cd retrieval_augmented\sh
 
 python run_exp.py --model_tag codet5_base --task translate --sub_task java-cs
 
 **NOTE: modify WORKDIR in exp_with_args.sh**
+
+## Ensemble
+
+use vote.py in dir **output**
