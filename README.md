@@ -1,10 +1,10 @@
 # EnRefiner
 
 ## Dependency
-Pytorch 1.7.1
-tensorboard 2.4.1
-transformers 4.6.1
-tree-sitter 0.2.2
+- Pytorch 1.7.1
+- tensorboard 2.4.1
+- transformers 4.6.1
+- tree-sitter 0.2.2
 
 ## Download
 CodeT5 Pre-trained checkpoints: https://console.cloud.google.com/storage/browser/sfr-codet5-data-research/pretrained_models
