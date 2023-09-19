@@ -18,9 +18,8 @@ def get_cmd(task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, tar
 
 def get_args_by_task_model(task, sub_task, model_tag):
     if task == 'translate':
-        # java-cs: Read 10300 examples, avg src len: 13, avg trg len: 15, max src len: 136, max trg len: 118
-        # [TOKENIZE] avg src len: 45, avg trg len: 56, max src len: 391, max trg len: 404
-        src_len = 320
+
+        src_len = 512
         trg_len = 256
         epoch = 100
         patience = 5
@@ -36,10 +35,7 @@ def get_args_by_task_model(task, sub_task, model_tag):
         epoch = 15
         patience = 2
     elif task == 'refine':
-        # small: Read 46680 examples, avg src len: 31, avg trg len: 28, max src len: 50, max trg len: 50
-        # [TOKENIZE] avg src len: 50, avg trg len: 45, max src len: 129, max trg len: 121
-        # medium:  Read 52364 examples, avg src len: 74, avg trg len: 73, max src len: 100, max trg len: 100
-        # [TOKENIZE] avg src len: 117, avg trg len: 114, max src len: 238, max trg len: 238
+
         if sub_task == 'small':
             src_len = 130
             trg_len = 120
