@@ -1,5 +1,5 @@
 # EnRefiner
-
+This repository is the code of APSEC 2023 "Improving Code Refinement for Code Review Via Input Reconstruction and Ensemble Learning".
 ## Dependency
 - Pytorch 1.7.1
 - tensorboard 2.4.1
